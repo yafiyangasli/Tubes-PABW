@@ -1,8 +1,9 @@
 <h1>LAPOR!</h1>
 <p>Detail laporan/Komentar</p>
-<?php foreach($lapor as $dt):?>
-<?= $dt['lapor'].' ';?>
-<?= $dt['aspek'].' ';?>
-<?= $dt['gambar'].' ';?>
-<?= $dt['waktu'];?>
-<?php endforeach?>
+<br>
+<p><?= $data['lapor'];?></h5>
+    <!-- <h6><?= $data['dt']['aspek'];?></h6>
+    <p><?= $data['dt']['gambar'];?></p>
+    <p><?= $data['dt']['waktu'];?></p> -->
+    <a href="<?=base_url()?>">Back</a>
+

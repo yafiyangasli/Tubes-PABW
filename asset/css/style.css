@@ -1,0 +1,13 @@
+ul li {
+	list-style-type: none;
+}
+body{
+	font-family: "Lucida Console", Lucida, monospace;
+}
+h1{
+	
+	color:DarkCyan;
+}
+p{
+	color:red;
+}
