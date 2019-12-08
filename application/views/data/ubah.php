@@ -6,7 +6,7 @@
 				    
 	<label for="lapor">Masukkan Keluhan/Komentar
 		<br>
-	<textarea name="lapor" id="lapor" placeholder="Masukkan keluhan anda disini..."></textarea>
+	<textarea name="lapor" id="lapor" placeholder="Masukkan keluhan anda disini..." ></textarea>
 	</label>
 	<br><br>
 
@@ -22,5 +22,5 @@
 	<label for="gambar">Gambar</label>
 	<input type="file" name="gambar" id="gambar">
 	<br><br>
-	<button type="submit" name="tambah">Tambah data</button>
+	<button type="submit" name="ubah">Ubah data</button>
 </form>	

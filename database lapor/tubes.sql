@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2019 at 03:59 PM
+-- Generation Time: Dec 08, 2019 at 10:27 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -36,17 +36,17 @@ CREATE TABLE `keluhan` (
   `waktu` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `keluhan`
+-- Table structure for table `user`
 --
 
-INSERT INTO `keluhan` (`id`, `lapor`, `aspek`, `gambar`, `waktu`) VALUES
-(5, 'anjay', 'Pelayanan', 'anjay', '2019-12-04 11:52:19'),
-(6, 'anjay 2', 'Kesejahteraan', 'anjay 2', '2019-12-04 11:53:32'),
-(7, 'aspek3', 'Tatanan Kota', 'aspek3', '2019-12-04 11:59:16'),
-(8, 'alasan4', 'Pelayanan', 'alasan4', '2019-12-04 12:02:46'),
-(9, 'anjay 5', 'Pelayanan', 'anjay5.jpg', '2019-12-04 12:03:44'),
-(10, 'tetew', 'Tatanan Kota', 'parah', '2019-12-04 14:48:21');
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(16) NOT NULL,
+  `password` varchar(16) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
@@ -59,6 +59,12 @@ ALTER TABLE `keluhan`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -66,7 +72,13 @@ ALTER TABLE `keluhan`
 -- AUTO_INCREMENT for table `keluhan`
 --
 ALTER TABLE `keluhan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
