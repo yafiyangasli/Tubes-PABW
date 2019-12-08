@@ -6,16 +6,18 @@
 				    
 	<label for="lapor">Masukkan Keluhan/Komentar
 		<br>
-	<textarea name="lapor" id="lapor" placeholder="Masukkan keluhan anda disini..." ></textarea>
+	<textarea name="lapor" id="lapor" placeholder="Masukkan keluhan anda disini..." value="<?= $keluhan['lapor'];?>"></textarea>
 	</label>
 	<br><br>
 
 	<label for="aspek">Aspek</label>
 	<br>
 	<select id="aspek" name="aspek">
-		<option>Pelayanan</option>
-		<option>Kesejahteraan</option>
-		<option>Tatanan Kota</option>
+		<option>Dosen</option>
+		<option>Staff</option>
+		<option>Mahasiswa</option>
+		<option>Infrastruktur</option>
+		<option>Pengajar</option>
 	</select>
 	<br><br>
 

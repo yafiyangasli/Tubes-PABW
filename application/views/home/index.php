@@ -23,6 +23,7 @@
 <ul class="detail">
 <?php foreach($lapor as $dt):?>
 <?= $dt['lapor'].' ';?>
+<br>
 <?= $dt['aspek'].' ';?>
 <?= $dt['gambar'].' ';?>
 <?= $dt['waktu'].' ';?>

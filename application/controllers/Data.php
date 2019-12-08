@@ -82,7 +82,7 @@ class Data extends CI_Controller{
 		$data['keluhan']=$this->Data_model->getDataById($id);
 		$this->form_validation->set_rules('lapor','Lapor','required');
 		$this->form_validation->set_rules('aspek','Aspek','required');
-		//$this->form_validation->set_rules('gambar','gambar','required');
+		// $this->form_validation->set_rules('gambar','gambar','required');
 		if($this->form_validation->run()==FALSE){
 		$this->load->view('templates/header',$data);
 		$this->load->view('data/ubah',$data);
@@ -90,7 +90,7 @@ class Data extends CI_Controller{
 	}else{
 		
 		$config['upload_path'] = './asset/gambar/';
-        $config['allowed_types'] = 'gif|jpg|png|jpeg|JPG|PNG|JPEG';
+        // $config['allowed_types'] = 'gif|jpg|png|jpeg|JPG|PNG|JPEG';
         // load library upload
         $this->load->library('upload', $config);
         if (!$this->upload->do_upload('gambar')) {

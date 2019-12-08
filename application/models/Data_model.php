@@ -50,19 +50,19 @@ class Data_model extends CI_model{
 		$this->db->delete('keluhan');
 	}
 
-	public function ubahDataLapor(){
+	public function ubahDataLapor($id){
 
 		$gambar=$this->Data_model->upload();
 		if(!$gambar){
 			return false;
 		}
-
+		//$this->Data_model->getDataById($id);
 		$data = [
 			"lapor"=>$this->input->post('lapor',true),
-			"aspek"=>$this->input->post('aspek',true),
+			"aspek"=>$this->input->post('aspek',true), 
 			"gambar"=>$gambar
 		];
-		$this->db->where('id',$this->input->post('id'));
+		$this->db->where('id',$id);
 		$this->db->update('keluhan',$data);
 	}
 }
